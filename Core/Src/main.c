@@ -360,7 +360,8 @@ int main(void)
   HAL_UART_Transmit_IT(&huart2, (uint8_t *) msg, strlen(msg));
 
   __HAL_SPI_ENABLE(&hspi1);
-
+  BMP180_Init();
+  MPU9250_Init();
 
 
 
